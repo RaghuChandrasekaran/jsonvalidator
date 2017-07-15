@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": true,
+  "definitions": {},
+  "id": "user",
+  "properties": {
+    "id": {
+      "default": 1,
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/id",
+      "title": "The Id Schema",
+      "type": "integer"
+    },
+    "name": {
+      "default": "device",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/name",
+      "maxLength": 10,
+      "minLength": 4,
+      "title": "The Name Schema",
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "id"
+  ],
+  "type": "object"
+}
+

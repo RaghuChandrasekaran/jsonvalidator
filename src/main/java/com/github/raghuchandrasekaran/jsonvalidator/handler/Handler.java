@@ -15,9 +15,7 @@ public class Handler  {
         ServletHolder jerseyServlet = context.addServlet(
                 org.glassfish.jersey.servlet.ServletContainer.class, "/*");
         jerseyServlet.setInitOrder(0);
-        jerseyServlet.setInitParameter(
-                "jersey.config.server.provider.packages",
-                "com.github.raghuchandrasekaran.jsonvalidator.resources");
+        jerseyServlet.setInitParameter("jersey.config.server.provider.packages", "com.github.raghuchandrasekaran.jsonvalidator");
         return context;
     }
 }
